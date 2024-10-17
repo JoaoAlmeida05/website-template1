@@ -8,7 +8,4 @@ function mobile_menu(){
         counter = false
         home.style.visibility = "visible";
     }
-
-    
-
 }

@@ -61,8 +61,16 @@ body {
         overflow-x: hidden;
     }
 
+    #Home img{
+        height: 3rem;
+    }
     .menu{
         visibility: hidden;
+    }
+
+    .home{
+        visibility: visible;
+        display: flex;
     }
 
     .home a{
@@ -73,6 +81,15 @@ body {
     .phone{
         display: flex;
         align-items: center;
+    }
+
+    .phone p{
+        visibility: hidden;
+        order: -1;
+    }
+
+    .social-media{
+        margin-right: .5rem;
     }
 }
 
