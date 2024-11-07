@@ -1,119 +1,208 @@
-:root{
+:root {
     --primary-color: ;
     --secondery-color: ;
-    
+
 }
-
-
-    
 
 body {
-    padding:0;
-    margin:0;
- }
+    padding: 0;
+    margin: 0;
+}
 
-.home{
+    /* Home Section */
+.home {
     list-style: none;
 }
-.home a{
+
+.home a {
     color: black;
     text-decoration: none;
 }
 
-/* Mobile Screen View */
-@media (max-width: 767px) { 
+    /* About Section */
+#About {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    overflow-x: hidden;
+}
 
-    #Home{
-        padding-top: 1rem;
-        display: flex;
-        justify-content: end;
-        overflow-x: hidden;
-    }
+#About div {
+    position: absolute;
+    overflow-x: hidden;
+}
 
-    .home{
-        display: flex;
-        order: 1;
-        
-    }
-    .home a{
-        margin-right: 1rem;
-    }
-
-    .home, .social-media, .phone{
-        visibility: hidden;
-        z-index: 1;
-    }
-
-    .menu{
-        z-index: 0;
-        order: 1;
-    }
+#About image {
+    position: relative;
+    z-index: 1;
+    overflow-x: hidden;
     
+}
+
+.overlay {
+    background-color: #22222253;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.readMore{
+    position: absolute;
+    background-color: #FFA500;
+    top: 65%;
+    left: 45%;
+    z-index: 3;
+    width: 15rem;
+    text-align: center;
+    border: 1px solid;
+}
+.readMore p{
+    font-size: 1.5rem;
+}
+
+.tittle{
+    position: absolute;
+    top: 35%;
+    left: 35%;
+    z-index: 3;
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    
+}
+
+/* Mobile Screen View */
+@media (max-width: 767px) {
+
+    #Home {
+        padding-top: 1rem;
+        overflow-x: hidden;
+        height: 4rem;
+
+    }
+
+    .home {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        column-gap: 1rem;
+        width: 100vw;
+        padding-left: unset;
+    }
+
+    .social-media,
+    .phone {
+        visibility: hidden;
+        position: relative;
+    }
+
+
+
 }
 
 
 /* Small Screens Laptop */
-@media (min-width: 768px) and (max-width: 1024px){
-    #Home{
+@media (min-width: 768px) and (max-width: 1024px) {
+
+
+            /* Home Section */
+    #Home {
         padding-top: 1rem;
         display: flex;
         justify-content: space-around;
         overflow-x: hidden;
     }
 
-    #Home img{
+    #Home img {
         height: 3rem;
     }
-    .menu{
-        visibility: hidden;
-    }
 
-    .home{
+
+    .home {
         visibility: visible;
         display: flex;
     }
 
-    .home a{
+    .home a {
         margin-right: 3rem;
-        
+
     }
 
-    .phone{
+
+    .phone {
         display: flex;
         align-items: center;
+
     }
 
-    .phone p{
+    .phone p {
         visibility: hidden;
         order: -1;
     }
 
-    .social-media{
+    .social-media {
         margin-right: .5rem;
     }
+
+
+
 }
 
 
+
 /* Desktop Large Sreens */
-@media (min-width: 1024px){
-    #Home{
+@media (min-width: 1024px) {
+
+    /* Home Section */
+    #Home {
         padding-top: 1rem;
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         overflow-x: hidden;
+
     }
 
-    .menu{
+    #Home img {
+        height: 5rem;
+    }
+
+
+    .home {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-evenly;
+
+    }
+
+    .home a {
+        font-size: 2rem;
+    }
+
+    .phone p {
+        font-size: 2rem;
+        margin-top: 20px;
+        position: absolute;
         visibility: hidden;
     }
 
-    .home a{
-        margin-right: 6 rem;
-        
-    }
-
-    .phone{
+    .phone {
         display: flex;
         align-items: center;
     }
+
+    .social-media {
+        display: flex;
+    }
+
+        /* About Section */
+    #About, div{
+        overflow-x: hidden;
+    }
+
 }
