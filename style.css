@@ -25,18 +25,20 @@ body {
     justify-content: center;
     background-color: black;
     overflow-x: hidden;
+    margin-bottom: 105vh;
 }
 
 #About div {
     position: absolute;
     overflow-x: hidden;
+    max-width: 100%;
 }
 
 #About image {
     position: relative;
     z-index: 1;
     overflow-x: hidden;
-    
+    max-width: 100%;
 }
 
 .overlay {
@@ -77,6 +79,11 @@ body {
     
 }
 
+    /*Services Section*/
+
+#Services .text{
+    margin-left: 1rem;
+}
 /* Mobile Screen View */
 @media (max-width: 767px) {
 
