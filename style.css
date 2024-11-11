@@ -97,6 +97,7 @@ body {
 .text p{
     width: 30%;
     font-size: 1.5rem;
+
 }
 
 .text h3{
@@ -142,12 +143,18 @@ body {
         position: relative;
     }
 
+    #About{
+        margin-bottom: 115vh;
+    }
     .readMore{
         left: 18%;
     }
 
     .tittle{
         left: 10%;
+    }
+    #Services{
+        margin-top: unset;
     }
     #Services div{
         flex-direction: column;
@@ -161,7 +168,9 @@ body {
         position: absolute;
     }
 
-   
+    .Services h3{
+        margin-top: -3rem;
+    }
 }
 
 
